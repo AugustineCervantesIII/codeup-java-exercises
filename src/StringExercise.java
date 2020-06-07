@@ -2,7 +2,7 @@
 public class StringExercise {
     public static void main(String[] args){
         //exercise one
-        String one = "We don't need no education \nWe don't need no thought control";
+        String one = "We don't need no edumacation \nWe don't need no thought control";
         System.out.println(one);
 
         String two = "Check \"this\" out!, \"s inside of \"s";
