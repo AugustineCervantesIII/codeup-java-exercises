@@ -3,11 +3,17 @@ import java.util.*;
 public class ArraysExercises {
 
     //to add a person
-        public static Person[] addPerson(Person[] people, Person newperson){
-            people = Arrays.copyOf(people, people.length + 1);
-            people[people.length - 1] = newperson;
-            return people;
-        }
+//        public static Person[] addPerson(Person[] people, Person newperson){
+//            people = Arrays.copyOf(people, people.length + 1);
+//            people[people.length - 1] = newperson;
+//            return people;
+//        }
+
+        public static Person[] addPerson(Person[] people, Person person){
+            Person[] oneMorePerson = Arrays.copyOf(people, people.length + 1);
+            oneMorePerson[oneMorePerson.length - 1] = person;
+            return oneMorePerson;
+    }
 
     public static void main(String[] args) {
 
@@ -35,8 +41,8 @@ public class ArraysExercises {
 
         //adding jack to a new copy of people
         Person[] copyPeople = addPerson(people, new Person("Jack"));
-        for(Person newpPeeps : copyPeople){
-            System.out.println(newpPeeps.getName());
+        for(Person newPeeps : copyPeople){
+            System.out.println(newPeeps.getName());
         }
 
     }
