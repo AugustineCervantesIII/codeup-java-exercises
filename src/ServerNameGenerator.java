@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ServerNameGenerator {
 
-        private static String[] adjectives = {
+        private static final String[] adjectives = {
                 "funny",
                 "pink",
                 "groovy",
