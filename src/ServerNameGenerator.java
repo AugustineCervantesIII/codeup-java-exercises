@@ -14,7 +14,7 @@ public class ServerNameGenerator {
                 "black",
                 "happy",
                 "tall",
-                "nice",
+                "nice"
         };
 
         public static String[] noun = {
@@ -27,7 +27,7 @@ public class ServerNameGenerator {
                 "duck",
                 "exterminator",
                 "chair",
-                "book,"
+                "book"
         };
 
         static Random randomizer = new Random();
