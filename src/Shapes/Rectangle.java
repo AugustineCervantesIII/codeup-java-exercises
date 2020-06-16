@@ -8,7 +8,7 @@ public class Rectangle {
 
     //Rectangle should define a constructor that accepts two numbers
     // for length and width, and sets those properties.
-    public Rectangle(double length, double width){
+    public Rectangle(double width, double length){
         this.length = length;
         this.width = width;
 

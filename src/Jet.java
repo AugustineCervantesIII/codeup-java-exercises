@@ -31,4 +31,5 @@ public class Jet extends Vehicle {
                 "maxAltitude = " + maxAltitude +
                 "} " + super.toString();
     }
+
 }

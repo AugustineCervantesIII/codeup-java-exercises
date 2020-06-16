@@ -9,4 +9,25 @@ public class Square extends Rectangle {
 
     }
 
+//    public void setWidth() {
+//
+//    }
+//
+//    public void setLength() {
+//
+//    }
+
+    @Override
+    public double getArea(){
+        System.out.println("override");
+        return 2 * this.length;
+    }
+
+    @Override
+    public double getPerimeter(){
+        System.out.println("override");
+        return 4 * this.length;
+    }
+
 }
+
