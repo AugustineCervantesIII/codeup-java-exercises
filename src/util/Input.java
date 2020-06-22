@@ -29,15 +29,27 @@ public class Input {
         }
     }
 
+    //changed for another exercise, walkthrough
     public int getInt() {
-        if (sc.hasNextInt()) {
-            return sc.nextInt();
-        } else {
-            System.out.println("Invalid input. Enter valid integer.");
-            sc.next();
+        String userInput = getString();
+        try {
+            int userInt = Integer.valueOf(userInput);
+            return userInt;
+        } catch (NumberFormatException e) {
+            System.out.println("error, please enter a valid number");
             return getInt();
         }
     }
+
+//    public int getInt() {
+//        if (sc.hasNextInt()) {
+//            return sc.nextInt();
+//        } else {
+//            System.out.println("Invalid input. Enter valid integer.");
+//            sc.next();
+//            return getInt();
+//        }
+//    }
 
     public int getInt(int min, int max) {
         int userInt = getInt();
@@ -49,15 +61,27 @@ public class Input {
         }
     }
 
+    //refactored for another exercise, walkthrough
     public double getDouble() {
-        if (sc.hasNextDouble()) {
-            return sc.nextDouble();
-        } else {
-            System.out.println("Invalid input. Enter valid number.");
-            sc.next();
-            return getInt();
+        String userInput = getString();
+        try {
+            double userDouble = Double.valueOf(userInput);
+            return userDouble;
+        } catch (NumberFormatException e) {
+            System.out.println("error, please enter a valid number");
+            return getDouble();
         }
     }
+
+//    public double getDouble() {
+//        if (sc.hasNextDouble()) {
+//            return sc.nextDouble();
+//        } else {
+//           // System.out.println("Invalid input. Enter valid number.");
+//            sc.next();
+//            return getInt();
+//        }
+//    }
 
     public double getDouble(double min, double max) {
         double userDouble = getDouble();
@@ -80,9 +104,9 @@ public class Input {
 //        boolean yesNo = in.yesNo();
 //        System.out.println(yesNo);
 
-        System.out.print("Please enter a whole number: ");
-        int num = in.getInt();
-        System.out.println("You entered: " + num);
+//        System.out.print("Please enter a whole number: ");
+//        int num = in.getInt();
+//        System.out.println("You entered: " + num);
 
 //        System.out.print("Please enter a whole number between 1 and 10: ");
 //        int numInRange = in.getInt(1, 10);
