@@ -11,7 +11,7 @@ public class ContactList {
     static List<People> person;
     static List<String> contacts;
     static int choice;
-    static Path contact = Paths.get("contacts-manager-exercise/src", "contacts.txt");
+    static Path contact = Paths.get("src", "contacts.txt");
 
 
     // this is the method to Display the list of people
@@ -43,7 +43,7 @@ public class ContactList {
 
         try {
             Files.write(
-                    Paths.get("contacts-manager-exercise/src", "contacts.txt"),
+                    Paths.get("src", "contacts.txt"),
                     Collections.singletonList(info), // list with one item
                     StandardOpenOption.APPEND
             );
@@ -97,27 +97,8 @@ public class ContactList {
         System.out.println(contacts);
     }
 
-    // this is the method to make a selection
-//    public static void selection() {
-//        choice = input.nextInt();
-//        if (choice == 1) {
-//            listPeople(person);
-//        }
-//        if (choice == 2) {
-//            addPeople();
-//        }
-//        if (choice == 3) {
-//            searchName();
-//        }
-//        if (choice == 4) {
-//            deleteByName();
-//        }
-//        if (choice == 5) {
-//            return;
-//        }
-//        System.out.println("Thank you, now exiting program.");
-//    }
 
+    //loop through choices
     public static void selection() {
         choice = input.nextInt();
         boolean yesNo = false;
@@ -140,13 +121,7 @@ public class ContactList {
             }
         }
     }
-//    switch(input){
-//        case:1
-//    }
-//    break;
-//    case:2 method();
-//    break;
-//    case:3 method();
+
 
     public static void main(String[] args) {
         System.out.println("1. View contacts. \n2. Add a new contact. \n3. Search a contact by name. \n4. Delete an existing contact. \n5. Exit. ");
