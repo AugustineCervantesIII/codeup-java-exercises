@@ -100,26 +100,33 @@ public class ContactList {
 
     //loop through choices
     public static void selection() {
-        choice = input.nextInt();
-        boolean yesNo = false;
-        while(!yesNo){
-            switch (choice) {
-                case 1:
-                    listPeople(person);
-                    break;
-                case 2:
-                    addPeople();
-                    break;
-                case 3:
-                    searchName();
-                    break;
-                case 4:
-                    deleteByName();
-                    break;
-                case 5:
-                    yesNo = true;
+        do {
+            choice = input.nextInt();
+            if (choice == 1) {
+                listPeople(person);
+                System.out.print("Please select an option from MENU: ");
+                continue;
             }
-        }
+            if (choice == 2) {
+                addPeople();
+                System.out.print("Please select an option from MENU: ");
+                continue;
+            }
+            if (choice == 3) {
+                searchName();
+                System.out.print("Please select an option from MENU: ");
+                continue;
+            }
+            if (choice == 4) {
+                deleteByName();
+                System.out.print("Please select an option from MENU: ");
+                continue;
+            }
+            if (choice == 5) {
+                System.out.println("exiting");
+                break;
+            }
+        }while(choice != 0);
     }
 
 
