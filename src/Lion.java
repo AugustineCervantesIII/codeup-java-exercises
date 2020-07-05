@@ -6,7 +6,7 @@ public class Lion extends Animal {
 
     @Override
     public void bigCat(){
-        System.out.println("The lion king is king of the jungle");
+        super.bigCat();
     }
 
 }
