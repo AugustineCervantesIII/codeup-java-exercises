@@ -3,23 +3,18 @@ public class Animal {
     String hunting;
     String chasing;
     String feasting;
+    String name;
+    String color;
+    String activity;
 
-    public Animal(String hunting, String chasing, String feasting){
+    public Animal(String hunting, String chasing, String feasting, String name, String color, String activity){
         this.hunting = hunting;
         this.chasing = chasing;
         this.feasting = feasting;
+        this.name = name;
+        this.color = color;
+        this.activity = activity;
     }
 
-    public void bigCat(){
-        System.out.println("king of the jungle, roams its kingdom freely and proud");
-    }
-
-    public void bigBadWolf(){
-        System.out.println("Cunning and smart, stays with the pack to survive and one");
-    }
-
-    public static void main(String[] args){
-
-    }
 
 }

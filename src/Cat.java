@@ -1,7 +1,7 @@
-public class Cat extends Pet {
+public class Cat extends Animal {
 
-    public Cat(String name, String color, String activity) {
-        super(name, color, activity);
+    public Cat(String hunting, String chasing, String feasting,String name, String color, String activity) {
+        super(hunting, chasing, feasting, name, color, activity);
     }
 
     public void meow() {

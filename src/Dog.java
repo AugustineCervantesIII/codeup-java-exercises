@@ -1,8 +1,8 @@
-public class Dog extends Pet {
+public class Dog extends Animal {
 
 
-    public Dog(String name, String color, String activity) {
-        super(name, color, activity);
+    public Dog(String hunting, String chasing, String feasting,String name, String color, String activity) {
+        super(hunting, chasing, feasting, name, color, activity);
     }
 
     public void bark() {
