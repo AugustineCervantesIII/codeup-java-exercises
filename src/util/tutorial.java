@@ -35,9 +35,14 @@
 //IDE - INTEGRATED DEVELOPMENT ENVIRONMENT - HEPS PROGRAMMERS WRITE CODE AND BUILD PROJECTS
 
 
+//WEATHER MAP –
+//
+//        COFFEE PROJECT –  is a project built using JavaScript document object model to change the html. We used event listeners like click and key up to our methods of adding and updating a coffee flavor to a list. Query selectors for specified html syntax to make changes.
+//
+//        CODEUP DESIGN PROJECT --
 
 
-package util;
+        package util;
 import java.sql.SQLOutput;
 import java.util.*;
 
